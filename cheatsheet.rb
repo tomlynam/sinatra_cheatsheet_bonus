@@ -19,8 +19,8 @@ get '/mv' do
 end
 
 
-get '/cd' do 
-	erb :cd
+get '/touch' do 
+	erb :touch
 end
 
 

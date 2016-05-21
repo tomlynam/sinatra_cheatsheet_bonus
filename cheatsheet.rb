@@ -10,7 +10,6 @@ end
 
 
 get '/cp' do 
-	@man_pages = ["cp", "mv", "cd", "mkdir", "ls"]
 	erb :cp
 end
 

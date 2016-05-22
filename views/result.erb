@@ -4,4 +4,8 @@
 
 <hr>
 
-<%= `man #{@page} | col -b` %>
+<% if @man.empty? == true %>
+	<p>Nothing was found</p>
+<% else %>
+	<%= `man #{@page} | col -b` %>
+<% end %>

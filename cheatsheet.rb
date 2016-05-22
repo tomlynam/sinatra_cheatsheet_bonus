@@ -20,6 +20,7 @@ end
 
 post '/search' do
 	@page = params[:page]
+	@man = `man #{@page}`
 	erb :result
 end
 

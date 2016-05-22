@@ -13,6 +13,16 @@ get '/menu' do
 end
 
 
+get '/search' do
+	erb :search
+end
+
+
+post '/search' do
+	@page = params[:page]
+	erb :result
+end
+
 
 get '/cp' do 
 	erb :cp

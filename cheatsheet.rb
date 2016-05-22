@@ -8,6 +8,11 @@ get '/' do
 	erb :index
 end
 
+get '/menu' do 
+	erb :menu
+end
+
+
 
 get '/cp' do 
 	erb :cp
